@@ -28,7 +28,7 @@ const Navbar = () => {
       {/* Nav Links */}
       <div className="flex space-x-10">
       <NavLink
-          to="/"
+          to="/FavourExpress/"
           index={0}
           activeIndex={activeIndex}
           onClick={handleNavLinkClick}
@@ -36,7 +36,7 @@ const Navbar = () => {
           name='Buses'
         />  
         <NavLink
-          to="/reservations"
+          to="/FavourExpress/reservations"
           index={1}
           activeIndex={activeIndex}
           onClick={handleNavLinkClick}
@@ -44,7 +44,7 @@ const Navbar = () => {
           name='Reservations'
         />  
         <NavLink
-          to="/users"
+          to="FavourExpress/users"
           index={2}
           activeIndex={activeIndex}
           onClick={handleNavLinkClick}
@@ -75,17 +75,17 @@ const Navbar = () => {
           onClick={handleToggleMenu}
         />
         {isMenuOpen && (
-          <ul className="absolute right-0 mt-2 py-2 bg-white border rounded-lg shadow-lg">
-            <li className="px-4 py-2 hover:bg-gray-100">
+          <ul className="absolute right-0 px-10 mt-2 py-2 bg-white border rounded-lg shadow-lg">
+            <li className="px-8 py-2 hover:bg-gray-100">
               <a
                 href="#"
-                className="block text-gray-800 hover:text-blue-500"
+                className=" text-gray-800 hover:text-blue-500"
               >
                 View Profile
               </a>
             </li>
-            <li className="px-4 py-2 hover:bg-gray-100">
-              <a href="#" className="block text-gray-800 hover:text-blue-500">
+            <li className="px-8 py-2 hover:bg-gray-100">
+              <a href="#" className=" text-gray-800 hover:text-blue-500">
                 Sign Out
               </a>
             </li>
